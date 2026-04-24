@@ -15,4 +15,4 @@ public class Mahasiswa01 {
     void tugasDinilai(int nilai){
         this.nilai = nilai;
     }
-}
+}//m
