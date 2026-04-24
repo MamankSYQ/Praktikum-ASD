@@ -53,17 +53,20 @@ public class MahasiswaDemo01 {
                         System.out.println("Tugas terakhir dikumpulkan oleh " + lihat.nama);
                     }
                     break;
-
                 case 4:
                     System.out.println("Daftar semua tugas");
                     System.out.println("Nama\tNIM\tKelas");
                     stack.print();
                     break;
-
+                case 5:
+                    Mahasiswa01 terbawah = stack.peekBawah();
+                    if (terbawah != null){
+                        System.out.println("Tugas pertama dikumpulkan oleh "+terbawah.nama);
+                    }
+                    break;
                 default:
                     System.out.println("Pilihan tidak valid.");
             }
-
-        } while (pilih >= 1 && pilih <= 4);
+        } while (pilih >= 1 && pilih <= 5);
     }
 }//mm
