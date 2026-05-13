@@ -63,9 +63,13 @@ public class DoubleLinkedList01 {
             return;
         }
         if (head == tail){
+            head.data.tampil();
+            System.out.println("Berhasil dihapus");
             head = tail = null;
         }
         else{
+            head.data.tampil();
+            System.out.println("Berhasil dihapus");
             head = head.next;
             head.prev = null;
         }
@@ -76,9 +80,13 @@ public class DoubleLinkedList01 {
             return;
         }
         if (head == tail){
+            head.data.tampil();
+            System.out.println("Berhasil dihapus");
             head = tail = null;
         }
         else{
+            tail.data.tampil();
+            System.out.println("Berhasil dihapus");
             tail = tail.prev;
             tail.next = null;
         }
@@ -93,6 +101,18 @@ public class DoubleLinkedList01 {
         while (current != null){
             current.data.tampil();
             current = current.next;
+        }
+    }
+    public void printReverse(){
+        if (isEmpty()){
+            System.out.println("Linked list masih kosong");
+            return;
+        }
+
+        Node01 current = tail;
+        while (current != null){
+            current.data.tampil();
+            current = current.prev;
         }
     }
 }

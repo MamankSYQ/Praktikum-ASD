@@ -25,7 +25,8 @@ public class DoubleLinkedListMain {
             System.out.println("3. Sisipkan data di tengah (Setelah NIM)");
             System.out.println("4. Hapus data di awal");
             System.out.println("5. Hapus data di akhir");
-            System.out.println("6. Tampilkan data");
+            System.out.println("6. Tampilkan data dari depan");
+            System.out.println("7. Tampilkan data dari belakang");
             System.out.println("0. Keluar");
             System.out.print("Pilih menu: ");
             pilih = sc.nextInt(); 
@@ -55,6 +56,9 @@ public class DoubleLinkedListMain {
                     break;
                 case 6:
                     list.print();
+                    break;
+                case 7:
+                    list.printReverse();
                     break;
                 case 0:
                     System.out.println("Program selesai");
