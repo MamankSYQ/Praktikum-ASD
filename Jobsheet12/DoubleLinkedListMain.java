@@ -2,13 +2,13 @@ package Jobsheet12;
 import java.util.Scanner;
 public class DoubleLinkedListMain {
     public static Mahasiswa01 inputMahasiswa(Scanner sc){
-        System.out.println("NIM : ");
+        System.out.print("NIM : ");
         String nim = sc.nextLine();
-        System.out.println("Nama : ");
+        System.out.print("Nama : ");
         String nama = sc.nextLine();
-        System.out.println("Kelas : ");
+        System.out.print("Kelas : ");
         String kelas = sc.nextLine();
-        System.out.println("IPK : ");
+        System.out.print("IPK : ");
         String ipk = sc.nextLine();
         sc.nextLine();
         return new Mahasiswa01(nim, nama, kelas, ipk);
