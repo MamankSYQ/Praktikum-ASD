@@ -9,7 +9,7 @@ public class DoubleLinkedListMain {
         System.out.print("Kelas : ");
         String kelas = sc.nextLine();
         System.out.print("IPK : ");
-        String ipk = sc.nextLine();
+        double ipk = sc.nextDouble();
         sc.nextLine();
         return new Mahasiswa01(nim, nama, kelas, ipk);
     }

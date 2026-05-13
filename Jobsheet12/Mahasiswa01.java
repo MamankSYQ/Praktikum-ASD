@@ -3,9 +3,9 @@ public class Mahasiswa01 {
     String nim;
     String nama;
     String kelas;
-    String ipk;
+    double ipk;
 
-    public Mahasiswa01(String nim, String nama, String kelas, String ipk){
+    public Mahasiswa01(String nim, String nama, String kelas, double ipk){
         this.nim = nim;
         this.nama = nama;
         this.kelas = kelas;
